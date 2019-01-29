@@ -3,13 +3,13 @@ Sidecar container for backing up volumes using resting over sftp.
 ## Build
 
 ```bash
-docker build -t restic-sidecar .
+docker build -t restic-backup-sidecar .
 ```
 
 ## Run
 
 ```bash
-docker run -v /path/to/id_rsa:/restic/key --env-file ./environment.env restic-sidecar
+docker run -v /path/to/id_rsa:/restic/key --env-file ./environment.env restic-backup-sidecar
 ```
 
 ## Notes
