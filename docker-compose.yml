@@ -1,0 +1,7 @@
+version: '3'
+services:
+  restic-sidecar:
+    image: blobfish42/restic-sidecar:latest
+    restart: unless-stopped
+    env_file:
+      - environment.env
