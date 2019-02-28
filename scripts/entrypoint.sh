@@ -13,6 +13,9 @@ then
 
 	./prepare-repo.sh
 	./backup.sh
+
+	echo "Bye!"
+	while :; do sleep 20; done  # bye bye
 fi
 
 # arguments were supplied, exec as shell command
